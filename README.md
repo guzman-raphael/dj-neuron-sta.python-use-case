@@ -1,6 +1,6 @@
 # Summary
 
-Installs packaged DataJoint python module (dj-neuron-sta.python-module), initializes the DB schema, populates elements of pipeline, and creates visualizations.
+Installs custom packaged DataJoint [python module](https://github.com/guzman-raphael/dj-neuron-sta.python-module), initializes the DB schema, populates elements of pipeline, and creates visualizations.
 
 
 # Instructions
