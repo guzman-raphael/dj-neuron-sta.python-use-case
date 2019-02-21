@@ -1,0 +1,14 @@
+
+version: '3'
+services:
+  dj_client:
+    # restart: always
+    build:
+      context: ./client
+      dockerfile: dj.dockerfile
+    image: dj_client:v1.0
+    working_dir: /data
+    volumes:
+      - ./client/src:/data/src
+      - ./client/config:/data/config
+      - ./client/log:/data/log

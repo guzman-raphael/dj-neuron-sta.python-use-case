@@ -1,0 +1,6 @@
+{
+  "host" : "tutorial-db.datajoint.io",
+  "username" : "rguzman",
+  "password" : "newTomorrow",
+  "schema" : "rguzman_STRF_pyPL"
+}
