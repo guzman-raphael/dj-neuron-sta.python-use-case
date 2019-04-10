@@ -26,7 +26,7 @@ load() {
   # Load
   docker stop $(docker ps -q)
   docker system prune -fa && docker volume prune -f
-  docker load < $DIRNAME/$TYPE"_DJCLIENT.tar.gz"
+  docker load < $DIRNAME"/"$TYPE"_DJCLIENT.tar.gz"
 
 }
 
@@ -39,8 +39,8 @@ build() {
     docker container prune -f
     # docker system prune -fa && docker volume prune -f
     docker-compose build
-    rm $DIRNAME/$TYPE"_DJCLIENT.tar.gz"
-    docker save dj_client:v1.0 | gzip > $DIRNAME/$TYPE"_DJCLIENT.tar.gz"
+    rm $DIRNAME"/"$TYPE"_DJCLIENT.tar.gz"
+    docker save dj_client:v1.0 | gzip > $DIRNAME"/"$TYPE"_DJCLIENT.tar.gz"
   )
 }
 

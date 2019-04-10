@@ -1,12 +1,14 @@
 
-version: '3'
+version: '3.4'
 services:
   dj_client:
     # restart: always
     build:
       context: ./client
+      network: host
       dockerfile: dj.dockerfile
     image: dj_client:v1.0
+    network_mode: host
     working_dir: /data
     volumes:
       - ./client/src:/data/src
